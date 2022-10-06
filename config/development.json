@@ -1,0 +1,9 @@
+{
+    "dbConnectionString":"mongodb+srv://<username>:<password>@chat-app.1v8zwhx.mongodb.net/?retryWrites=true&w=majority",
+    "mongoPass":{
+        "username":"",
+        "password":""
+    },
+    "jwtPrivateKey":""
+
+}
