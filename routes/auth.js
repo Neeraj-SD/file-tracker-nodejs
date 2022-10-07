@@ -3,7 +3,6 @@ const o_auth = require('../middlewares/o_auth');
 const router = express.Router()
 const _ = require('lodash');
 const { validate, User } = require('../models/user');
-const { UserAvatar } = require('../models/user/user-avatar');
 const bcrypt = require('bcryptjs/dist/bcrypt');
 
 // router.post('/register', o_auth, async (req, res) => {
@@ -26,6 +25,10 @@ const bcrypt = require('bcryptjs/dist/bcrypt');
 
 //     res.header('x-auth-token', result.generateAuthToken()).status(201).send(await result.getAnonymousUser())
 // });
+
+router.get('/test', (req, res) => {
+    return res.status(200).send('I am alive')
+})
 
 router.post('/google', o_auth, async (req, res) => {
     // const { error, value } = validate(req.body);
